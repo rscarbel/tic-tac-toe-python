@@ -26,7 +26,7 @@ def print_board():
                 result += f'|{spot}\n'
                 # only the middle rows should have a dividing line underneath
                 if i != len(board) - 1:
-                    result += '-----\n'
+                    result += '-----------\n'
             else:
                 result += f'|{spot}'
     print(f'Moves so far: {num_moves}')
@@ -51,7 +51,7 @@ def add_move_to_board(y: int, x: int):
     change_player()
 
 
-def check_for_victory():
+# def check_for_victory():
 
 
 print_board()
